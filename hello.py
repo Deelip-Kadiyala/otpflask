@@ -41,7 +41,7 @@ def generateotp():
 def getOTPapi(email):
     global global_otp
     # account_sid='AC6ec85c67a0dca260538d67dc25a25734'
-    # auth_token='6b85661608ad083a48ec95c125c06ecb'
+    # auth_token='<token>'
     # client= Client(account_sid,auth_token)
     global_otp=generateotp()
     # session['response'] = str(otp)
@@ -53,7 +53,7 @@ def getOTPapi(email):
     #     return False
     s.starttls() 
     # Authentication 
-    s.login("techwithdnp@gmail.com", "qyzhtuojpnpcympd") 
+    s.login("techwithdnp@gmail.com", "<key>") 
     # message to be sent 
     message = "Here is your OTP "+str(global_otp)
     # sending the mail 
